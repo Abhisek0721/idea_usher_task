@@ -1,6 +1,6 @@
 # Post Management APIs (Idea Usher Task)
 
-### API Documentation: [Click Here](https://documenter.getpostman.com/view/27812531/2sAYJ9BJbr)
+### API Documentation: [Click Here](https://documenter.getpostman.com/view/27812531/2sAYJ9BJq4)
 
 This is a simple Post Management API.
 
