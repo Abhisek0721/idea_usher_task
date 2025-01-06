@@ -4,7 +4,7 @@
 
 This is a simple Post Management API.
 
-### Live: https://recipe-management-vg17.onrender.com
+### Live: https://idea-usher.crontrack.com
 
 ## Technologies Used
 
