@@ -1,33 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    "module": "commonjs",                                /* Specify what module code is generated. */
-    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
-    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
-    "strict": true,                                      /* Enable all strict type-checking options. */
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "skipLibCheck": true,
+    "baseUrl": "./",
+    "outDir": "./dist",    // Add this line
     "paths": {
-      "@/utils/*": [
-        "/src/utils/*"
-      ],
-      "@/constants/*": [
-        "/src/constants/*"
-      ],
-      "@/config/*": [
-        "/src/config/*"
-      ],
-      "@/controllers/*": [
-        "/src/api/controllers/*"
-      ],
-      "@/types/*": [
-        "/src/api/types/*"
-      ],
-      "@/models/*": [
-        "/src/api/models/*"
-      ],
-      "@/routers/*": [
-        "/src/api/routers/*"
-      ],
-    },
-  }
+      "@/utils/*": ["./src/utils/*"],
+      "@/constants/*": ["./src/constants/*"],
+      "@/config/*": ["./src/config/*"],
+      "@/controllers/*": ["./src/api/controllers/*"],
+      "@/types/*": ["./src/api/types/*"],
+      "@/services/*": ["./src/api/services/*"],
+      "@/models/*": ["./src/api/models/*"],
+      "@/routers/*": ["./src/api/routers/*"]
+    }
+  },
 }
