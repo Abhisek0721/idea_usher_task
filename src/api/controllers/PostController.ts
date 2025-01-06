@@ -126,7 +126,7 @@ class PostController {
         .skip((Number(page) - 1) * Number(limit))
         .limit(Number(limit))
         .populate("tags");
-      
+
       const totalPosts = await Post.countDocuments(query);
 
       res.status(200).json({
@@ -135,8 +135,8 @@ class PostController {
           totalPosts,
           page,
           limit,
-          sort
-        }
+          sort,
+        },
       });
     } catch (err: any) {
       res.status(500).json({ message: err.message });
