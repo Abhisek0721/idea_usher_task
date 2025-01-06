@@ -1,39 +1,32 @@
-# Creato Backend (Identity Service)
+# Post Management APIs (Idea Usher Task)
 
-This is the backend microservice of Creato, a social media management software developed using Django (python framework).
+### API Documentation: [Click Here](https://documenter.getpostman.com/view/27812531/2sAYJ9BJbr)
 
-### Frontend Source Code: [Click Here](https://github.com/Abhisek0721/creato-frontend)
+This is a simple Post Management API.
 
-## Features
-
-- **Authentication:** User registration, login, and session based authentication.
-- **User Management:** CRUD operations for user.
-- **Team Management:** CRUD operations for team.
-- **Workspace Management:** CRUD operations for workspace (for project management).
+### Live: https://recipe-management-vg17.onrender.com
 
 ## Technologies Used
 
-- **Django:** Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
-- **DRF:** Django REST Framework is a powerful and flexible toolkit for building Web APIs.
-- **PostgreSQL:** A SQL database for storing data.
-- **Redis:** Used for storing sessions and cache.
+- **Node.js:** JavaScript Runtime Environment.
+- **Express.js:** Lightweight API REST Framework for Node.js.
+- **MongoDB:** A NoSQL (Non-Relational) DBMS for storing data.
+- **Cloudinary:** Cloud storage for storing images and files.
 
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/Abhisek0721/idea_usher_task`
-2. Install dependencies: `pip install -r requirements.txt`
+2. Install dependencies: `npm install`
 3. Set up environment variables: Create a `.env` file and define the following variables:
    ```
-    DEBUG=True
-    SECRET_KEY=your-secret-key
-    DB_NAME=identity_creato
-    DB_USER=postgres
-    DB_PASSWORD=root
-    DB_HOST=localhost
-    DB_PORT=5432
+    PORT=3000
+    SERVER_URL=http://localhost:3000
+    MONGO_URI='your_mongodb_uri'
+    CLOUDINARY_CLOUD_NAME= ""
+    CLOUDINARY_API_KEY= ""
+    CLOUDINARY_API_SECRET= ""
    ```
-4. Run the server: `python manage.py runserver`
-5. Run Celery Worker: `celery -A core worker -l info`
+4. Run the server: `npm run dev`
 
 
 </br></br>
